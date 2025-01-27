@@ -155,9 +155,10 @@
    
   }
 
+
   .rotating-image {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     animation: rotateAndMessage 5s infinite linear;
     transition: transform 0.2s ease;
@@ -244,13 +245,13 @@
   .sidebar-toggle {
     border: none;
     padding: 10px 20px;
-    margin-top: 140px;
+    margin-top: 115px;
     cursor: pointer;
     font-size: 16px;
     transform: scale(1s);
     transition: 2s ease-in-out;
     position: fixed;
-    backdrop-filter: blur(2px);
+    
     z-index: 1000;
     color:  rgb(255, 255, 255);
     background: rgba(37, 66, 141, 0.3);
@@ -259,11 +260,19 @@
     
 
   }
+  .side-bar {
+    display: none; 
+}
+
+.side-bar.active {
+    display: block; 
+    
+}
 
   
   .sidebar-toggle:hover + .side-bar,
   .side-bar:hover {
-    display: block; 
+    
 
     background: rgba(42, 49, 67, 0.9);
     color: #4658a0;
@@ -278,13 +287,13 @@
     position: fixed;
     top: 0;
     left: 10px;
-    width: 140px;
+    width: 150px;
     height: 20vh;
     background: rgba(44, 73, 145, 0.752);
     color: #ffffff;
     padding: 20px;
     transition: all 0.3s ease-in-out;
-    margin-top: 150px;
+    margin-top: 100px;
     border-radius: 10px;
     z-index: 1000;
   }
@@ -460,6 +469,7 @@
     border-radius: 50%;
     box-shadow: 0 0 50px var(--main-color);
     transition: 0.8s ease-in-out ;
+    margin-top: 25px;
     
    
     
@@ -630,9 +640,9 @@
 }
 
 .card {
-  width: 50px;
+  width: 400px;
   height: 400px;
-  border-radius: 20px;
+  border-radius: 24px;
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -641,7 +651,7 @@
   display: flex;
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.91, -0.1, 0, 1);
-  box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 10px 15px -5px rgba(41, 40, 40, 0.993);
 }
 
 .card > .row {
@@ -654,8 +664,8 @@
 .card > .row > .icon {
  background:  linear-gradient(
     270deg,
-    #346ee2 10%,
-    #e7d0b5 100%
+    #578bf2 10%,
+    #f3e1cc 100%
   );
   color: #fffbfb;
   border-radius: 50%;
@@ -664,7 +674,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 20px;
 }
 
 .card > .row > .description {
@@ -673,7 +683,7 @@
   flex-direction: column;
   overflow: hidden;
   height: 60px;
-  width: 80px;
+  width: 100px;
   opacity: 0;
   transform: translateY(30px);
   transition-delay: 0.3s;
@@ -693,6 +703,7 @@ input {
 
 input:checked + label {
   width: 400px;
+  height: 200px;
 }
 
 input:checked + label .description {
@@ -701,16 +712,16 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-  background-image: url('WhatsApp\ Image\ 2025-01-25\ at\ 19.05.18_85e1c1a6.jpg');
+  background-image: url('linkedin.png');
 }
 
 .card[for="c2"] {
-  background-image: url('intro.jpg');
+  background-image: url('cs.png');
   
 }
 
 .card[for="c3"] {
-  background-image: url('WhatsApp\ Image\ 2025-01-25\ at\ 19.11.56_f962e5f2.jpg');
+  background-image: url('cs50.png');
 }
 
 
@@ -780,15 +791,15 @@ input:checked + label .description {
   }
 
   .home-content h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .home-content h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .home-content p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .home-img img {
@@ -796,7 +807,7 @@ input:checked + label .description {
   }
 
   .social-icons a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .btn-group {
@@ -810,8 +821,8 @@ input:checked + label .description {
   }
 
   .card {
-    width: 1px;
-    height: 120px;
+    width: 60px;
+    height: 200px;
   }
 
   .about-content h2 {
